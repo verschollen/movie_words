@@ -23,7 +23,6 @@ class bot:
     	self.bot.infinity_polling()
     def echo_all(self, message):
         #write_json(message.json, 'message.json')
-        print(emoji.demojize(message.text))
         self.bot.send_message(message.chat.id,
                               message.text,
                               reply_markup=keyboards.main
